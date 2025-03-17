@@ -6,10 +6,10 @@ class InfinityMathList extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Список степеней 2'),
-        backgroundColor: Colors.green, // Устанавливаем зеленый фон для AppBar
+        backgroundColor: Colors.green,
       ),
       body: ListView.separated(
-        itemCount: 20, // Ограничиваем количество элементов
+        itemCount: 20,
         itemBuilder: (context, index) {
           return ListTile(title: Text('2 ^ $index = ${1 << index}'));
         },
@@ -18,4 +18,3 @@ class InfinityMathList extends StatelessWidget {
     );
   }
 }
-
